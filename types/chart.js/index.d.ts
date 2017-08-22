@@ -164,6 +164,18 @@ declare namespace Chart {
         cutoutPercentage?: number;
         circumference?: number;
         rotation?: number;
+        layout?: ChartLayout;
+    }
+    
+    interface ChartLayout {
+        padding: ChartPaddingOptions | number;
+    }
+    
+    interface ChartPaddingOptions {
+        left?: number;
+        right?: number;
+        top?: number;
+        bottom?: number;
     }
 
     interface ChartFontOptions {
